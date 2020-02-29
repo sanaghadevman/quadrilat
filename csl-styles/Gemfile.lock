@@ -1,9 +1,31 @@
+GIT
+  remote: https://github.com/citation-style-language/Sheldon.git
+  revision: 947933eb4bd3667e10c231e5ff17554fd6d78315
+  specs:
+    sheldon (1.0.2)
+      citeproc-ruby
+      csl-styles
+      diffy
+      dotenv
+      nokogiri
+      ostruct
+      reverse_markdown
+
 GEM
   remote: https://rubygems.org/
   specs:
+    citeproc (1.0.6)
+      namae (~> 0.8)
+    citeproc-ruby (1.1.8)
+      citeproc (>= 1.0.4, < 2.0)
+      csl (~> 1.4)
     csl (1.4.3)
       namae (~> 0.7)
+    csl-styles (1.0.1.10)
+      csl (~> 1.0)
     diff-lcs (1.2.5)
+    diffy (3.3.0)
+    dotenv (2.7.5)
     fuubar (2.0.0)
       rspec (~> 3.0)
       ruby-progressbar (~> 1.4)
@@ -13,7 +35,10 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogiri (1.6.7.2-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
-    rake (10.5.0)
+    ostruct (0.1.0)
+    rake (12.3.3)
+    reverse_markdown (1.4.0)
+      nokogiri
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -39,6 +64,7 @@ DEPENDENCIES
   nokogiri
   rake
   rspec
+  sheldon!
 
 BUNDLED WITH
    1.11.2
