@@ -1,19 +1,73 @@
+GIT
+  remote: https://github.com/citation-style-language/Sheldon.git
+  revision: 9fe7d65e0b77f75195d6dd036a01fee4af596e8b
+  specs:
+    sheldon (1.0.30)
+      citeproc-ruby
+      csl-styles
+      diffy
+      dotenv
+      erubis (~> 2.7)
+      faraday
+      faraday_middleware
+      git_diff
+      hashdiff (= 0.3.7)
+      nokogiri
+      octokit (~> 4.0)
+      ostruct
+      reverse_markdown
+
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    citeproc (1.0.6)
+      namae (~> 0.8)
+    citeproc-ruby (1.1.8)
+      citeproc (>= 1.0.4, < 2.0)
+      csl (~> 1.4)
     csl (1.4.3)
       namae (~> 0.7)
+    csl-styles (1.0.1.11)
+      csl (~> 1.0)
     diff-lcs (1.2.5)
+    diffy (3.4.0)
+    dotenv (2.7.6)
+    erubis (2.7.0)
+    faraday (1.4.1)
+      faraday-excon (~> 1.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-excon (1.1.0)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.1.0)
+    faraday_middleware (1.0.0)
+      faraday (~> 1.0)
     fuubar (2.0.0)
       rspec (~> 3.0)
       ruby-progressbar (~> 1.4)
-    mini_portile2 (2.0.0)
+    git_diff (0.4.3)
+    hashdiff (0.3.7)
+    mini_portile2 (2.5.1)
+    multipart-post (2.1.1)
     namae (0.10.1)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
-    nokogiri (1.6.7.2-x86-mingw32)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.11.4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    nokogiri (1.11.4-x86-mingw32)
+      racc (~> 1.4)
+    octokit (4.21.0)
+      faraday (>= 0.9)
+      sawyer (~> 0.8.0, >= 0.5.3)
+    ostruct (0.3.3)
+    public_suffix (4.0.6)
+    racc (1.5.2)
     rake (10.5.0)
+    reverse_markdown (2.0.0)
+      nokogiri
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -28,6 +82,10 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     ruby-progressbar (1.7.5)
+    ruby2_keywords (0.0.4)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
 
 PLATFORMS
   ruby
@@ -39,6 +97,7 @@ DEPENDENCIES
   nokogiri
   rake
   rspec
+  sheldon!
 
 BUNDLED WITH
    1.11.2
